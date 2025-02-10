@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Horizon Hub - Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Horizon Hub - Weather Dashboard</h1>
+    </header>
+    
+    <div class="container">
+        <!-- Weather Search Input Section -->
+        <div class="weather-input">
+            <h3>Enter a City Name</h3>
+            <input class="city-input" type="text" placeholder="E.g., New York, London, Tokyo">
+            <button class="search-btn">Search</button>
+            <div class="separator"></div>
+            <button class="location-btn">Use Current Location</button>
+        </div>
+
+        <!-- Weather Data Section -->
+        <div class="weather-data">
+            <div class="current-weather">
+                <div class="details">
+                    <h2>City Name ( Country )</h2>
+                    <h6>Temperature: <span>__</span>°C</h6>
+                    <h6>Wind: <span>__</span> M/S</h6>
+                    <h6>Humidity: <span>__</span>%</h6>
+                </div>
+                <div class="icon">
+                    <img src="weather_logo.jpg" alt="Weather Icon">
+                    <h6>Condition</h6>
+                </div>
+            </div>
+
+            <!-- 5-Day Weather Forecast -->
+            <div class="days-forecast">
+                <h2>5-Day Forecast</h2>
+                <ul class="weather-cards">
+                    <li class="card">
+                        <h3>Day 1</h3>
+                        <img src="weather_logo.jpg" alt="Weather Icon">
+                        <h6>Temp: <span>__</span>°C</h6>
+                        <h6>Wind: <span>__</span> M/S</h6>
+                        <h6>Humidity: <span>__</span>%</h6>
+                    </li>
+                    <li class="card">
+                        <h3>Day 2</h3>
+                        <img src="weather_logo.jpg" alt="Weather Icon">
+                        <h6>Temp: <span>__</span>°C</h6>
+                        <h6>Wind: <span>__</span> M/S</h6>
+                        <h6>Humidity: <span>__</span>%</h6>
+                    </li>
+                    <li class="card">
+                        <h3>Day 3</h3>
+                        <img src="weather_logo.jpg" alt="Weather Icon">
+                        <h6>Temp: <span>__</span>°C</h6>
+                        <h6>Wind: <span>__</span> M/S</h6>
+                        <h6>Humidity: <span>__</span>%</h6>
+                    </li>
+                    <li class="card">
+                        <h3>Day 4</h3>
+                        <img src="weather_logo.jpg" alt="Weather Icon">
+                        <h6>Temp: <span>__</span>°C</h6>
+                        <h6>Wind: <span>__</span> M/S</h6>
+                        <h6>Humidity: <span>__</span>%</h6>
+                    </li>
+                    <li class="card">
+                        <h3>Day 5</h3>
+                        <img src="weather_logo.jpg" alt="Weather Icon">
+                        <h6>Temp: <span>__</span>°C</h6>
+                        <h6>Wind: <span>__</span> M/S</h6>
+                        <h6>Humidity: <span>__</span>%</h6>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

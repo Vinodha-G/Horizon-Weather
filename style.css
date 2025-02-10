@@ -1,0 +1,148 @@
+/* Import Google font - Open Sans */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #74b9ff, #0984e3);
+    color: #fff;
+    text-align: center;
+}
+
+/* Header Styling */
+header {
+    background: #2d3436;
+    padding: 20px;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+/* Main Container */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px;
+}
+
+/* Weather Input Section */
+.weather-input {
+    width: 450px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.weather-input h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.weather-input input {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+}
+
+.weather-input button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 6px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    background: #2d3436;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.weather-input button:hover {
+    background: #636e72;
+}
+
+.weather-input .separator {
+    margin: 15px 0;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+/* Current Weather Section */
+.weather-data {
+    width: 100%;
+    max-width: 800px;
+}
+
+.current-weather {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.current-weather h2 {
+    font-size: 1.8rem;
+}
+
+.current-weather h6 {
+    margin-top: 8px;
+    font-size: 1rem;
+}
+
+.icon img {
+    width: 80px;
+}
+
+/* 5-Day Forecast Section */
+.days-forecast h2 {
+    margin: 20px 0;
+    font-size: 1.5rem;
+}
+
+.weather-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.weather-cards .card {
+    background: rgba(255, 255, 255, 0.3);
+    padding: 15px;
+    border-radius: 8px;
+    width: 130px;
+}
+
+.weather-cards .card img {
+    width: 50px;
+    margin-bottom: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .current-weather {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .weather-cards {
+        flex-wrap: wrap;
+    }
+}
