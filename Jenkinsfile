@@ -2,11 +2,12 @@ pipeline {
   agent any
 
     environment {
-        OPENSHIFT_PROJECT = "test-app" 
-        IMAGE_NAME = "tictacimg" // can replace with any custom image name
-        GIT_REPO = "enter your github repo link" 
-        GIT_REF = "main"  // if any other branch name you are using please mention that here
-    }
+    OPENSHIFT_PROJECT = "test-app" 
+    IMAGE_NAME = "tictacimg"
+    GIT_REPO = "https://github.com/Vinodha-G/Horizon-Weather.git"
+    GIT_REF = "main"
+}
+
 
     stages {
         stage('Deploy APP to OCP') {
