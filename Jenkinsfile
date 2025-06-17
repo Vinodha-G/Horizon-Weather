@@ -2,7 +2,7 @@ pipeline {
   agent any
 
     environment {
-        OPENSHIFT_PROJECT = "enter your ocp namespace" 
+        OPENSHIFT_PROJECT = "test-app" 
         IMAGE_NAME = "tictacimg" // can replace with any custom image name
         GIT_REPO = "enter your github repo link" 
         GIT_REF = "main"  // if any other branch name you are using please mention that here
