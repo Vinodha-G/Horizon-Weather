@@ -7,12 +7,13 @@ pipeline {
             }
         }
         stage('Deploy to OpenShift') {
-            steps {
-                script {
-                    sh 'oc whoami'
-                    sh 'oc apply -f deployment.yaml'
-                }
-            }
-        }
+  steps {
+    script {
+      echo "Skipping deployment as deployment.yaml is not yet added"
+      // sh 'oc apply -f deployment.yaml'
+    }
+  }
+}
+
     }
 }
